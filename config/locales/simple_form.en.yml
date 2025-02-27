@@ -1,0 +1,11 @@
+en:
+  simple_form:
+    labels:
+      board:
+        title: Board title
+        background: Background
+  helpers:
+    submit:
+      board:
+        create: Create
+        update: Update

@@ -23,8 +23,28 @@ Things you may want to cover:
 
 * ...
 
-## Started With
+## Working on
 
+Generate the project:
 ```
 rails new rrello --css=sass --javascript=esbuild --database=postgresql
 ```
+
+### Adding the Boards
+
+Generate the board model:
+```
+rails generate model Board title:string background:string
+```
+Add validations to [model](app/models/board.rb) and [migration](db/migrate/20250224234754_create_boards.rb) files.
+
+Add system tests to [boards_test.rb](test/system/boards_test.rb) and fixtures to [boards.yml](test/fixtures/boards.yml)
+
+Create the CRUD controller:
+```
+bin/rails g controller Boards
+```
+
+Add controller resources to [routes.rb](config/routes.rb)
+
+And create the views in [app/views/boards](app/views/boards)

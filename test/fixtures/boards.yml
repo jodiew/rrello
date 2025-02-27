@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+first:
+  title: First board
+  background: green
+
+second:
+  title: Second board
+  background: blue
+
+third:
+  title: Third board
+  background: yellow
