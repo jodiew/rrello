@@ -10,10 +10,10 @@ class BoardsTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Boards"
 
     click_on "Create new board"
-    assert_selector "h1", text: "Create board"
+    assert_selector "h1", text: "New board"
 
-    fill_in "Board title", with: "Capybara board"
-    click_on "Create"
+    fill_in "Title", with: "Capybara board"
+    click_on "Create Board"
 
     assert_selector "h1", text: "Capybara board"
   end
@@ -35,8 +35,8 @@ class BoardsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
     assert_selector "h1", text: "Edit board"
 
-    fill_in "Board title", with: "Updated board"
-    click_on "Update"
+    fill_in "Title", with: "Updated board"
+    click_on "Update Board"
 
     assert_selector "h1", text: "Updated board"
   end

@@ -48,3 +48,17 @@ bin/rails g controller Boards
 Add controller resources to [routes.rb](config/routes.rb)
 
 And create the views in [app/views/boards](app/views/boards)
+
+Load fixtures data:
+```
+bin/rails db:fixtures:load
+```
+Or edit [db/seeds.rb](db/seeds.rb) file to make `bin/rails db:seed` equivalent.
+
+## Resources
+
+- [Ruby on Rails Guides](https://guides.rubyonrails.org/)
+
+- [Turbo Rails Tutorial](https://www.hotrails.dev/turbo-rails)
+
+- [BEM Methodology](https://en.bem.info/methodology/)
