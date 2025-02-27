@@ -1,0 +1,33 @@
+= form_with(model: board) do |form|
+  - if board.errors.any?
+    div
+      = board.errors.full_messages.to_sentence.capitalize
+  
+  div
+    = form.label :title
+    = form.text_field :title, autofocus: true
+
+  div
+    = form.label :background
+
+    div
+      = form.radio_button :background, "white", checked: true
+      = form.label :background_white, "White"
+    
+    div
+      = form.radio_button :background, "red"
+      = form.label :background_white, "Red"
+    
+    div
+      = form.radio_button :background, "green"
+      = form.label :background_white, "Green"
+    
+    div
+      = form.radio_button :background, "blue"
+      = form.label :background_white, "Blue"
+
+    div
+      = form.radio_button :background, "yellow"
+      = form.label :background_white, "Yellow"
+  
+  = form.submit

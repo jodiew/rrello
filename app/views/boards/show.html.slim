@@ -1,0 +1,11 @@
+main
+  = link_to "Back to boards", boards_path
+
+  div
+    h1
+      = @board.title
+
+    div
+      = button_to "Delete", @board, method: :delete
+
+      = link_to "Edit", edit_board_path(@board)
