@@ -1,7 +1,8 @@
-main
-  div
+main class="container"
+  div class="header"
     h1 Boards
 
-  = link_to "Create new board", new_board_path
+  div class="boards-list"
+    = link_to "Create new board", new_board_path, class: "board board--new"
 
-  == render @boards
+    == render @boards

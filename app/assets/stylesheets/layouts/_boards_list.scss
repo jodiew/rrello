@@ -1,0 +1,12 @@
+@use "../mixins/media" as *;
+
+.boards-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: var(--space-xxxxxl);
+  gap: var(--space-l);
+
+  @include media(tabletAndUp) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

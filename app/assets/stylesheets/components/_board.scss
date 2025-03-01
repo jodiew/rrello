@@ -1,0 +1,33 @@
+.board {
+  display: inline-block;
+  padding: var(--space-s);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-small);
+  font-weight: bold;
+  font-size: var(--font-size-l);
+  color: var(--color-text-header);
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+
+  &--new {
+    padding: var(--space-xl);
+    font-weight: normal;
+    color: var(--color-text-body);
+  }
+  &--white {
+    background-color: var(--theme-white);
+  }
+  &--red {
+    background-color: var(--theme-red);
+  }
+  &--green {
+    background-color: var(--theme-green);
+  }
+  &--blue {
+    background-color: var(--theme-blue);
+  }
+  &--yellow {
+    background-color: var(--theme-yellow);
+  }
+}
